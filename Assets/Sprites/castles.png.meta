@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: 842572b54b8fc7c4d9670161104f83ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6304826840174917774
+    second: tower_0
+  - first:
+      213: 6156901781275099173
+    second: tower_1
+  - first:
+      213: 4625833658082079308
+    second: tower_2
+  - first:
+      213: -7577164617122143832
+    second: tower_3
+  - first:
+      213: 1653440205920934677
+    second: tower_small
+  - first:
+      213: -907845745824006705
+    second: building
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tower_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 77
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12.5, y: 32}
+        - {x: -12.5, y: -48}
+        - {x: 12.5, y: -48}
+        - {x: 12.5, y: 32}
+        - {x: -0.5, y: 47}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 66b0f860d970b7c418ab7288e5c352fd
+      internalID: 6304826840174917774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 77
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15.5, y: 20}
+        - {x: 15.5, y: 35}
+        - {x: 2.5, y: 48}
+        - {x: -5.5, y: 48}
+        - {x: -15.5, y: 36}
+        - {x: -15.5, y: 25}
+        - {x: -14.5, y: -25}
+        - {x: -15.5, y: -26}
+        - {x: -15.5, y: -48}
+        - {x: 15.5, y: -48}
+        - {x: 15.5, y: -25}
+        - {x: 14.5, y: -24}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: efb92b3b7bffd8f4d920dd95472b1f3e
+      internalID: 6156901781275099173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 77
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 28}
+        - {x: 11.5, y: 33}
+        - {x: -3.5, y: 40}
+        - {x: -5.5, y: 40}
+        - {x: -13.5, y: 39}
+        - {x: -15.5, y: 35}
+        - {x: -15.5, y: -48}
+        - {x: 15.5, y: -48}
+        - {x: 15.5, y: -25}
+        - {x: 14.5, y: -24}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 50fd295a9db312649a1e12696ed99ca9
+      internalID: 4625833658082079308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 77
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 20}
+        - {x: 6.5, y: 29}
+        - {x: 3.5, y: 30}
+        - {x: -8.5, y: 30}
+        - {x: -12.5, y: 26}
+        - {x: -15.5, y: 9}
+        - {x: -15.5, y: -48}
+        - {x: 15.5, y: -48}
+        - {x: 15.5, y: -25}
+        - {x: 14.5, y: -24}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: b469d42615e3fee4694e99ba4688f035
+      internalID: -7577164617122143832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_small
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 57
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2.5, y: 33}
+        - {x: -2.5, y: 32}
+        - {x: -3.5, y: 27}
+        - {x: -9.5, y: 14}
+        - {x: -13.5, y: 12}
+        - {x: -14.5, y: 11}
+        - {x: -14.5, y: -33}
+        - {x: 14.5, y: -33}
+        - {x: 14.5, y: 13}
+        - {x: 5.5, y: 33}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 1d2ab6bedf90e8a41a65bc79b859153b
+      internalID: 1653440205920934677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 77
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 30.5}
+        - {x: -0.5, y: 22.5}
+        - {x: -3.5, y: 18.5}
+        - {x: -3.5, y: 9.5}
+        - {x: -1.5, y: 6.5}
+        - {x: -27.5, y: 6.5}
+        - {x: -29.5, y: 4.5}
+        - {x: -31.5, y: -3.5}
+        - {x: -31.5, y: -31.5}
+        - {x: 31.5, y: -31.5}
+        - {x: 31.5, y: 23.5}
+        - {x: 19.5, y: 30.5}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 41e5e693675167148838f1bd5c6caee6
+      internalID: -907845745824006705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1777ae19006872f4b99c48a6dd7fde4f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
