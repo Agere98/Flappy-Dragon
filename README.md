@@ -20,3 +20,6 @@ Unity ML-Agents Demo
 - [Coin](https://opengameart.org/content/2d-coin) by Lexatchison
 
   License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/)
+
+## Notes
+When opening the project for the first time, make sure to import TMP Essentials (a dialog should appear).
