@@ -29,8 +29,9 @@ public class Flapper : MonoBehaviour
     IEnumerator AddForceWithDelay()
     {
         yield return new WaitForSeconds (flapDelay);
-        rb.velocity = Vector2.zero;
+        //rb.velocity /= 4f;
         float force = (1f - Mathf.Clamp01 ((tr.position.y - borderHeight) / (maxHeight - borderHeight))) * flapForce;
-        rb.AddForce (Vector3.up * force, ForceMode2D.Impulse);
+        //rb.AddForce (Vector3.up * force, ForceMode2D.Force);
+        rb.velocity = new Vector2 (0F, force);
     }
 }

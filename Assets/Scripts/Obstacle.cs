@@ -7,13 +7,12 @@ public class Obstacle : MonoBehaviour
 
     public UnityEvent onCrash;
 
-    GameController controller;
+    public GameController controller { get; set; }
     Rigidbody2D rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D> ();
-        controller = GameObject.FindWithTag ("GameController").GetComponent<GameController> ();
     }
 
     private void Update()

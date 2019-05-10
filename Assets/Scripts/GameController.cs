@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using TMPro;
 
@@ -13,10 +12,12 @@ public class GameController : MonoBehaviour
 
     public State state { get; private set; }
 
+    [SerializeField] Dragon dragon;
     [SerializeField] TextMeshProUGUI scoreText;
 
     public UnityEvent onGameStart;
     public UnityEvent onGameEnd;
+    public UnityEvent onGameRestart;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        scoreText.SetText ("Score: " + Coin.score);
+        scoreText?.SetText ("Score: " + dragon.score);
     }
 
     public void StartGame()
@@ -42,6 +43,7 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
+        state = State.Waiting;
+        onGameRestart.Invoke ();
     }
 }
