@@ -186,7 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa99e344ff8a3d4ca5f498df7aefed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   groundHeight: -4
   onCrash:
     m_PersistentCalls:
@@ -253,6 +252,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  onScoreChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Dragon+ScoreEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &1440673048652286253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,11 +333,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5225964852097661668, guid: 4c19f557d9d7f134bb03ba4cda1407f1,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c19f557d9d7f134bb03ba4cda1407f1, type: 3}

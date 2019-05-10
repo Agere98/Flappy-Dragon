@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 
-public class Coin : MonoBehaviour
-{
+[RequireComponent (typeof (SpriteRenderer))]
+[RequireComponent (typeof (Collider2D))]
+public class Coin : MonoBehaviour {
+
     SpriteRenderer rn;
     Collider2D cl;
 
@@ -20,8 +22,10 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Dragon dragon = collision.GetComponent<Dragon> ();
-        if (dragon) dragon.score++;
-        rn.enabled = false;
-        cl.enabled = false;
+        if (dragon) {
+            dragon.score++;
+            rn.enabled = false;
+            cl.enabled = false;
+        }
     }
 }

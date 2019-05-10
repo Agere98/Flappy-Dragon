@@ -1,32 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-using TMPro;
 
-public class GameController : MonoBehaviour
-{
+public class GameController : MonoBehaviour {
+
     public enum State {
         Waiting,
         Playing,
         GameOver
     }
 
-    public State state { get; private set; }
-
-    [SerializeField] Dragon dragon;
-    [SerializeField] TextMeshProUGUI scoreText;
-
     public UnityEvent onGameStart;
     public UnityEvent onGameEnd;
     public UnityEvent onGameRestart;
 
+    public State state { get; private set; }
+
     private void Start()
     {
         state = State.Waiting;
-    }
-
-    private void Update()
-    {
-        scoreText?.SetText ("Score: " + dragon.score);
     }
 
     public void StartGame()
