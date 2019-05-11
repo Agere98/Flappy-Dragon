@@ -697,7 +697,7 @@ PrefabInstance:
     - target: {fileID: 5990757810290811263, guid: 322cd3a62779d494fb9a2e26d3b78cab,
         type: 3}
       propertyPath: poolSize
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5990757810290811263, guid: 322cd3a62779d494fb9a2e26d3b78cab,
         type: 3}
