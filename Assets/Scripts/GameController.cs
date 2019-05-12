@@ -1,31 +1,23 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
-using TMPro;
 
-public class GameController : MonoBehaviour
-{
+public class GameController : MonoBehaviour {
+
     public enum State {
         Waiting,
         Playing,
         GameOver
     }
 
-    public State state { get; private set; }
-
-    [SerializeField] TextMeshProUGUI scoreText;
-
     public UnityEvent onGameStart;
     public UnityEvent onGameEnd;
+    public UnityEvent onGameRestart;
+
+    public State state { get; private set; }
 
     private void Start()
     {
         state = State.Waiting;
-    }
-
-    private void Update()
-    {
-        scoreText.SetText ("Score: " + Coin.score);
     }
 
     public void StartGame()
@@ -42,6 +34,7 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
+        state = State.Waiting;
+        onGameRestart.Invoke ();
     }
 }

@@ -109,3 +109,11 @@ sysinfo.txt
 # Crashlytics generated file
 
 crashlytics-build.properties
+
+
+
+# Other
+
+/[Aa]ssets/ML-Agents/Examples/
+
+/[Aa]ssets/ML-Agents/Examples.meta

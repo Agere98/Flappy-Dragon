@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e67ede24225b5b54a866b1de450830b1, type: 2}
+    - target: {fileID: 6154484000102852752, guid: ea8c244f1f7b2c94d945979f0958c860,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3322745437525560806, guid: ea8c244f1f7b2c94d945979f0958c860,
         type: 3}
       propertyPath: UVModule.startFrame.scalar

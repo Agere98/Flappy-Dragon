@@ -1,34 +1,35 @@
 ﻿using UnityEngine;
 
-public class OffsetScroller : MonoBehaviour
-{
-    [SerializeField] GameController controller;
+[RequireComponent (typeof (MeshRenderer))]
+public class OffsetScroller : MonoBehaviour {
+
+    [SerializeField] GameController controller = null;
     [SerializeField] bool stopOnGameOver = true;
-    [SerializeField] float scrollSpeed;
+    [SerializeField] float scrollSpeed = .05f;
 
     Vector2 savedOffset;
-    new MeshRenderer renderer;
+    MeshRenderer rn;
 
     private void Awake()
     {
-        renderer = GetComponent<MeshRenderer> ();
+        rn = GetComponent<MeshRenderer> ();
     }
 
     void Start()
     {
-        savedOffset = renderer.sharedMaterial.GetTextureOffset ("_MainTex");
+        savedOffset = rn.sharedMaterial.GetTextureOffset ("_MainTex");
     }
 
     void Update()
     {
-        if (stopOnGameOver && controller.state == GameController.State.GameOver) return;
+        if (stopOnGameOver && controller && controller.state == GameController.State.GameOver) return;
         float x = Mathf.Repeat (Time.time * scrollSpeed, 1);
         Vector2 offset = new Vector2 (x, savedOffset.y);
-        renderer.sharedMaterial.SetTextureOffset ("_MainTex", offset);
+        rn.sharedMaterial.SetTextureOffset ("_MainTex", offset);
     }
 
     void OnDisable()
     {
-        renderer.sharedMaterial.SetTextureOffset ("_MainTex", savedOffset);
+        rn.sharedMaterial.SetTextureOffset ("_MainTex", savedOffset);
     }
 }
