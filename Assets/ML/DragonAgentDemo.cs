@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using MLAgents;
 
-public class DragonAgent : Agent {
+public class DragonAgentDemo : Agent {
 
-    [SerializeField] GameController controller = null;
-    [SerializeField] Dragon dragon = null;
-    [SerializeField] float raycastDistance = 20f;
-    [SerializeField] float raycastXOffset = -2f;
-    [SerializeField] float[] obstacleRaycasts = new float[] { -2.5f, -1.5f, -.5f, 1f, 2.3f, 3.6f };
-    [SerializeField] float[] coinRaycasts = new float[] { -.5f, .5f, 1.5f };
+    public GameController controller;
+    public Dragon dragon;
+    public float raycastDistance = 20f;
+    public float raycastXOffset = -2f;
+    public float[] obstacleRaycasts = new float[] { -2.5f, -1.5f, -.5f, 1f, 2.3f, 3.6f };
+    public float[] coinRaycasts = new float[] { -.5f, .5f, 1.5f };
 
     Transform agentTransform;
     Transform tr;
@@ -27,24 +27,18 @@ public class DragonAgent : Agent {
     public override void AgentAction(float[] vectorAction, string textAction)
     {
         base.AgentAction (vectorAction, textAction);
-        // To Flap, or not to Flap
         if ((int)vectorAction[0] > 0) {
             flapper.Flap ();
         }
-        // Reward for coins collected
         if (dragon.score > score) {
             AddReward ((dragon.score - score) * 1f);
             score = dragon.score;
         }
-        // Existential bonus
         AddReward (.001f);
     }
 
     public override void AgentReset()
     {
-#if UNITY_EDITOR
-        Debug.Log ($"Score: {score}\t Reward: {GetCumulativeReward ()}");
-#endif
         base.AgentReset ();
         score = 0;
         if (controller.state == GameController.State.GameOver)
@@ -68,7 +62,6 @@ public class DragonAgent : Agent {
             RaycastHit2D hit = Physics2D.Raycast (pos, Vector2.right, raycastDistance, LayerMask.GetMask ("Obstacle"));
             if (hit.collider) {
                 AddVectorObs (hit.distance / (2 * raycastDistance));
-                Debug.DrawLine (pos, hit.point, Color.red);
             }
             // No obstacle detected
             else AddVectorObs (1f);
@@ -79,9 +72,6 @@ public class DragonAgent : Agent {
         for (int i = 0; i < coinRaycasts.Length; i++) {
             Vector2 pos = new Vector2 (tr.position.x + raycastXOffset, agentTransform.position.y + coinRaycasts[i]);
             RaycastHit2D hit = Physics2D.Raycast (pos, Vector2.right, raycastDistance, LayerMask.GetMask ("Coin"));
-            if (hit.collider) {
-                Debug.DrawLine (pos, hit.point, Color.green);
-            }
             if (hit.collider && hit.distance < closestCoinDistance) {
                 if (hit.distance < 1f) {
                     // Coin missed
@@ -93,20 +83,5 @@ public class DragonAgent : Agent {
         }
         AddVectorObs (closestCoinDistance / (2 * raycastDistance));
         AddVectorObs (Mathf.Clamp01 ((closestCoinHeight + 4f) / 8f));
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (dragon == null) return;
-        Gizmos.color = Color.blue;
-        for (int i = 0; i < obstacleRaycasts.Length; i++) {
-            Vector2 pos = new Vector2 (dragon.transform.position.x + raycastXOffset, transform.position.y + obstacleRaycasts[i]);
-            Gizmos.DrawRay (pos, Vector2.right * raycastDistance);
-        }
-        Gizmos.color = Color.yellow;
-        for (int i = 0; i < coinRaycasts.Length; i++) {
-            Vector2 pos = new Vector2 (dragon.transform.position.x + raycastXOffset, transform.position.y + coinRaycasts[i]);
-            Gizmos.DrawRay (pos, Vector2.right * raycastDistance);
-        }
     }
 }

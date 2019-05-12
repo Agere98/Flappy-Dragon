@@ -18,17 +18,18 @@ public class InputManager : MonoBehaviour {
             if (!player) {
                 Debug.LogWarning ("Input Manager: Player is not assigned");
             } else {
-                switch (controller.state) {
-                    case GameController.State.Waiting:
-                        controller.StartGame ();
-                        player.Flap ();
-                        break;
-                    case GameController.State.Playing:
-                        player.Flap ();
-                        break;
-                    case GameController.State.GameOver:
-                        controller.RestartGame ();
-                        break;
+                if (controller.state == GameController.State.Playing) {
+                    player.Flap ();
+                } else if (Input.GetButtonDown ("Jump")) {
+                    switch (controller.state) {
+                        case GameController.State.Waiting:
+                            controller.StartGame ();
+                            player.Flap ();
+                            break;
+                        case GameController.State.GameOver:
+                            controller.RestartGame ();
+                            break;
+                    }
                 }
             }
         }

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41e9bda8f3cf1492fa74926a530f6f70, type: 3}
-  m_Name: PlayerBrain
+  m_Script: {fileID: 11500000, guid: 8b23992c8eb17439887f5e944bf04a40, type: 3}
+  m_Name: DragonLearning
   m_EditorClassIdentifier: 
   brainParameters:
     vectorObservationSize: 10
@@ -20,12 +20,4 @@ MonoBehaviour:
     vectorActionDescriptions:
     - 
     vectorActionSpaceType: 0
-  keyContinuousPlayerActions:
-  - key: 32
-    index: 0
-    value: 1
-  axisContinuousPlayerActions: []
-  discretePlayerActions:
-  - key: 32
-    branchIndex: 0
-    value: 1
+  model: {fileID: 4900000, guid: c6c9a16dc987aeb4095297c7f3dabe46, type: 3}
