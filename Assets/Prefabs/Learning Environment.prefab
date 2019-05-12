@@ -207,17 +207,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8323121691495845976}
-        m_MethodName: AddReward
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -1
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 8323121691495845976}
         m_MethodName: Done
         m_Mode: 1
         m_Arguments:
@@ -297,11 +286,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8897676891175477668}
     m_Modifications:
-    - target: {fileID: 6062607633900464662, guid: 94148806cda4f0748b2adb147e41f673,
-        type: 3}
-      propertyPath: m_Name
-      value: Dragon
-      objectReference: {fileID: 0}
     - target: {fileID: 3581358615773940690, guid: 94148806cda4f0748b2adb147e41f673,
         type: 3}
       propertyPath: onCrash.m_PersistentCalls.m_Calls.Array.size
@@ -356,6 +340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onCrash.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062607633900464662, guid: 94148806cda4f0748b2adb147e41f673,
+        type: 3}
+      propertyPath: m_Name
+      value: Dragon
       objectReference: {fileID: 0}
     - target: {fileID: 6062607633900464651, guid: 94148806cda4f0748b2adb147e41f673,
         type: 3}
@@ -451,11 +440,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8897676891175477668}
     m_Modifications:
-    - target: {fileID: 3757397988177891004, guid: 4baca4f7fc6f60d4285b45ada9c46327,
-        type: 3}
-      propertyPath: m_Name
-      value: TowerSpawner
-      objectReference: {fileID: 0}
     - target: {fileID: 3757397988177890994, guid: 4baca4f7fc6f60d4285b45ada9c46327,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -516,6 +500,11 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 5599691558317768545}
+    - target: {fileID: 3757397988177891004, guid: 4baca4f7fc6f60d4285b45ada9c46327,
+        type: 3}
+      propertyPath: m_Name
+      value: TowerSpawner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4baca4f7fc6f60d4285b45ada9c46327, type: 3}
 --- !u!4 &4615213634095167230 stripped
@@ -543,11 +532,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8897676891175477668}
     m_Modifications:
-    - target: {fileID: 7224665093541473972, guid: f4268e6ad7ed1e74c9fdabe7373f35cf,
-        type: 3}
-      propertyPath: m_Name
-      value: SheepSpawner
-      objectReference: {fileID: 0}
     - target: {fileID: 7224665093541473978, guid: f4268e6ad7ed1e74c9fdabe7373f35cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -608,6 +592,11 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 5599691558317768545}
+    - target: {fileID: 7224665093541473972, guid: f4268e6ad7ed1e74c9fdabe7373f35cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SheepSpawner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4268e6ad7ed1e74c9fdabe7373f35cf, type: 3}
 --- !u!4 &2268503395128417408 stripped
