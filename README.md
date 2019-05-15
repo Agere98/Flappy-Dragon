@@ -1,8 +1,13 @@
 # Flappy-Dragon
-Unity ML-Agents Demo
+A simple game utilizing Unity Machine Learning Agents Toolkit.
 
 ## Unity ML-Agents Toolkit
 https://github.com/Unity-Technologies/ml-agents
+
+## Project setup
+1. Follow [this guide](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md) to install Unity ML Agents Toolkit.
+2. Download and open this project.
+3. When opening the project for the first time, make sure to import TMP Essentials (a dialog should appear).
 
 ## 2D art ([opengameart.org](https://opengameart.org/)):
 - [Dragon](https://opengameart.org/content/red-dragon) by ZaPaper; Credits to http://www.buko-studios.com/ Commissioned by PlayCraft: www.playcraftapp.com
@@ -25,4 +30,4 @@ https://github.com/Unity-Technologies/ml-agents
   License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Notes
-When opening the project for the first time, make sure to import TMP Essentials (a dialog should appear).
+This demo was created using Unity ML-Agents Beta 0.8.1. If you are using a newer version of the toolkit, you may want to replace the `/Assets/ML-Agents` directory with the one you find in the toolkit's repository, and follow the [guide on migrating from earlier versions](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Migrating.md).
