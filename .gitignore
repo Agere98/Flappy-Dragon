@@ -32,6 +32,8 @@
 
 [Aa]ssets/TextMesh*Pro/
 
+[Aa]ssets/TextMesh*Pro.meta
+
 
 
 # Visual Studio cache directory
@@ -121,3 +123,7 @@ crashlytics-build.properties
 /[Aa]ssets/ML-Agents/Examples/
 
 /[Aa]ssets/ML-Agents/Examples.meta
+
+/[Aa]ssets/ML-Agents/Editor/Tests/RayPerceptionTests.cs
+
+/[Aa]ssets/ML-Agents/Editor/Tests/RayPerceptionTests.cs.meta
