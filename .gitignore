@@ -116,9 +116,9 @@ crashlytics-build.properties
 
 # Other
 
-/[Aa]ssets/JFD/
+/[Aa]ssets/_/
 
-/[Aa]ssets/JFD.meta
+/[Aa]ssets/_.meta
 
 /[Aa]ssets/ML-Agents/Examples/
 
