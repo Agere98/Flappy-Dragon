@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour {
         GameOver
     }
 
+    [SerializeField] float timeScale = 1.25f;
+
     public UnityEvent onGameStart;
     public UnityEvent onGameEnd;
     public UnityEvent onGameRestart;
@@ -17,6 +19,7 @@ public class GameController : MonoBehaviour {
 
     private void Start()
     {
+        Time.timeScale = timeScale;
         state = State.Waiting;
     }
 

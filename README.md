@@ -1,3 +1,5 @@
+![](FlappyDragon.png)
+
 # Flappy-Dragon
 A simple game utilizing Unity Machine Learning Agents Toolkit.
 
