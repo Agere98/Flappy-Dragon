@@ -1,3 +1,6 @@
 ﻿using MLAgents;
 
-public class DragonAcademy : Academy {}
+namespace Demo {
+
+    public class DragonAcademy : Academy { }
+}
