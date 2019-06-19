@@ -7,7 +7,7 @@ A simple game utilizing Unity Machine Learning Agents Toolkit.
 https://github.com/Unity-Technologies/ml-agents
 
 ## Project setup
-1. Follow [this guide](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md) to install Unity ML Agents Toolkit.
+1. Follow [this guide](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md) to install Unity ML-Agents Toolkit.
 2. Download and open this project.
 3. When opening the project for the first time, make sure to import TMP Essentials (a dialog should appear).
 
@@ -33,3 +33,5 @@ https://github.com/Unity-Technologies/ml-agents
 
 ## Notes
 This demo was created using Unity ML-Agents Beta 0.8.1. If you are using a newer version of the toolkit, you may want to replace the `/Assets/ML-Agents` directory with the one you find in the toolkit's repository, and follow the [guide on migrating from earlier versions](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Migrating.md).
+
+These materials are not sponsored by or affiliated with Unity Technologies or its affiliates. "Unity", "ML-Agents" and "Unity Machine Learning Agents" are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere.
